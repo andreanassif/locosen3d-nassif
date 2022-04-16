@@ -191,3 +191,21 @@ ol li {
 }
 
 /* FIN DE IMPRESIONES 3D */
+
+/* ANIMACIONES */
+
+.aumentar:hover{
+        transform: scale(1.1);
+        box-shadow: 0 0 25px rgb(102, 102, 102);
+        transition: 1s;
+        scroll-behavior: smooth;
+    }
+
+.icono:hover {
+    transform: scale(1.3);
+    transition: 1s;
+    scroll-behavior: smooth;
+}
+
+
+/* fin animaciones */
