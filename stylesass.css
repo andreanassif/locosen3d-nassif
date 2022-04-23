@@ -9,9 +9,28 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  scroll-behavior: smooth; }
+  scroll-behavior: smooth;
+  list-style-type: none; 
+}
+
+/* NAV */
+
+.navbar-dark .navbar-nav .nav-link.active, .navbar-dark .navbar-nav .show > .nav-link {
+  color: #00eebada;
+}
+
+.nav-link {
+  color: #00eebada;
+}
+
+.navbar-dark .navbar-brand {
+  color: #00eebada;
+}
+
+/* FIN NAV */
 
 /* INDEX */
+
 .gallery-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -100,7 +119,11 @@
   grid-template-columns: 0.5fr 1fr;
   grid-template-rows: 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr;
   gap: 20px 50px;
-  grid-template-areas: "intro intro" "primeretapa pasos-primer-etapa" "parrafo1 pasos-primer-etapa" "segundaetapa pasos-segunda-etapa" "parrafo2 pasos-segunda-etapa"; }
+  grid-template-areas: "intro intro"
+ "primeretapa pasos-primer-etapa"
+ "parrafo1 pasos-primer-etapa"
+ "segundaetapa pasos-segunda-etapa"
+ "parrafo2 pasos-segunda-etapa"; }
   .disenos3d .intro {
     grid-area: intro; }
   .disenos3d .primeretapa {
