@@ -1,0 +1,141 @@
+@charset "UTF-8";
+* {
+  font-style: normal;
+  font-family: 'Fredoka One', cursive;
+  font-size: 13px;
+  color: #00eebada;
+  text-decoration: none;
+  text-shadow: 0 0 0.2em black, 0 0 0.2em black, 0 0 0.2em black;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth; }
+
+/* INDEX */
+.gallery-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 300px;
+  padding: 20px;
+  grid-gap: 10px;
+  background: linear-gradient(#080606, rgba(8, 109, 75, 0.781)); }
+  .gallery-container .gallery__item {
+    position: relative; }
+    .gallery-container .gallery__item .gallery__img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover; }
+      .gallery-container .gallery__item .gallery__img:hover {
+        transform: scale(1.1);
+        box-shadow: 0 0 25px #666666;
+        transition: 1s;
+        scroll-behavior: smooth; }
+    .gallery-container .gallery__item .gallery__title {
+      position: absolute;
+      bottom: 0;
+      color: aquamarine;
+      background: linear-gradient(rgba(255, 255, 255, 0), black);
+      width: 100%;
+      margin: 0;
+      padding: 10px; }
+    .gallery-container .gallery__item:nth-child(1) {
+      grid-column-start: span 2; }
+    .gallery-container .gallery__item:nth-child(5) {
+      grid-row-start: span 2; }
+    .gallery-container .gallery__item:nth-child(5) {
+      grid-row-start: span 2; }
+    @media screen and (max-width: 412px) {
+      .gallery-container .gallery__item:nth-child(1) {
+        grid-column-start: span 3; }
+      .gallery-container .gallery__item:nth-child(2) {
+        grid-column-start: span 3; }
+      .gallery-container .gallery__item:nth-child(3) {
+        grid-column-start: span 3; }
+      .gallery-container .gallery__item:nth-child(4) {
+        grid-column-start: span 3; }
+      .gallery-container .gallery__item:nth-child(5) {
+        grid-column-start: span 3; }
+      .gallery-container .gallery__item:nth-child(6) {
+        grid-column-start: span 3; } }
+
+/* FIN INDEX */
+/* MATERIALES */
+.materiales-content {
+  background: linear-gradient(#080606, rgba(8, 109, 75, 0.781)); }
+  @media screen and (max-width: 412px) {
+    .materiales-content .tabla {
+      width: 100%; }
+    .materiales-content .tabla thead {
+      display: none; }
+    .materiales-content .tabla th[data-titulo] {
+      display: flex; }
+    .materiales-content .tabla th[data-titulo]::before {
+      content: attr(data-titulo);
+      width: 120px; }
+    .materiales-content .tabla tr {
+      display: flex;
+      flex-direction: column;
+      border: 1px solid #1acfc0;
+      padding: 10px; } }
+
+/* FIN MATERIALES */
+/* CONTACTO */
+.contacto-container {
+  background: linear-gradient(#080606, rgba(95, 112, 114, 0.911)); }
+  @media screen and (max-width: 412px) {
+    .contacto-container .mapa-img {
+      width: 100%; } }
+  .contacto-container .icono:hover {
+    transform: scale(1.3);
+    transition: 1s;
+    scroll-behavior: smooth; }
+
+/* FIN CONTACTO */
+/* DISEÑOS EN 3D */
+.disenos3d {
+  color: black;
+  margin: 20px;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 0.5fr 1fr;
+  grid-template-rows: 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr;
+  gap: 20px 50px;
+  grid-template-areas: "intro intro" "primeretapa pasos-primer-etapa" "parrafo1 pasos-primer-etapa" "segundaetapa pasos-segunda-etapa" "parrafo2 pasos-segunda-etapa"; }
+  .disenos3d .intro {
+    grid-area: intro; }
+  .disenos3d .primeretapa {
+    grid-area: primeretapa; }
+  .disenos3d .parrafo1 {
+    grid-area: parrafo1; }
+  .disenos3d .pasos-primer-etapa {
+    grid-area: pasos-primer-etapa; }
+  .disenos3d .segundaetapa {
+    grid-area: segundaetapa; }
+  .disenos3d .parrafo2 {
+    grid-area: parrafo2; }
+  .disenos3d .pasos-segunda-etapa {
+    grid-area: pasos-segunda-etapa; }
+  .disenos3d ol li {
+    justify-content: center; }
+
+/* FIN DISEÑOS EN 3D */
+/* IMPRESIONES EN 3D */
+.vid-conteiner {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 300px;
+  padding: 20px;
+  grid-gap: 10px;
+  background: linear-gradient(#080606, rgba(8, 109, 75, 0.781)); }
+  .vid-conteiner .vid__item {
+    position: relative; }
+  .vid-conteiner .vid__mp4 {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; }
+  @media screen and (max-width: 412px) {
+    .vid-conteiner {
+      display: flex;
+      flex-direction: column; } }
+
+/* FIN DE IMPRESIONES 3D */

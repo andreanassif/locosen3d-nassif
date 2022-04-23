@@ -1,0 +1,25 @@
+{
+  "name": "locosen3d-andreanassif",
+  "version": "1.0.0",
+  "description": "agregando sassi a mi proyecto",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css":"node-sass --include-path scss sass/prueba.scss stylesass.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andreanassif/locosen3d-nassif.git"
+  },
+  "author": "Andrea Nassif",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/andreanassif/locosen3d-nassif/issues"
+  },
+  "homepage": "https://github.com/andreanassif/locosen3d-nassif#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.1",
+    "nodemon": "^2.0.15"
+  }
+}
