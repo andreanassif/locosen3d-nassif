@@ -1,190 +1,27 @@
-* {
-    font-style: normal;
-    font-family: 'Fredoka One', cursive;
-    font-size: 13px;
-    color: #00eebada;
-    text-decoration: none;
-    text-shadow: 0 0 0.2em black, 0 0 0.2em black, 0 0 0.2em black;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    scroll-behavior: smooth;
+@import "variables";
+@import "general";
+@import "inicio";
+@import "materiales";
+@import "contacto";
+@import "disenos3d";
+@import "impresiones3d";
+
+.navbar-dark .navbar-brand {
+    color: $colorfuenteprincipal;
+  }
+
+.nav-link {
+    color: $colorfuenteprincipal;
 }
 
-/* INDEX */
-
-.gallery-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-auto-rows: 300px;
-    padding: 20px;
-    grid-gap: 10px;
-    background: linear-gradient(rgb(8, 6, 6),rgba(8, 109, 75, 0.781));
-    .gallery__item {
-        position: relative;
-        .gallery__img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            &:hover{
-                transform: scale(1.1);
-                box-shadow: 0 0 25px rgb(102, 102, 102);
-                transition: 1s;
-                scroll-behavior: smooth;
-            }
-        }
-        
-        .gallery__title{
-            position: absolute;
-            bottom: 0;
-            color: aquamarine;
-            background: linear-gradient(rgba(255,255,255,0),rgba(0,0,0,1));
-            width: 100%;
-            margin: 0;
-            padding: 10px;
-        }
-        &:nth-child(1) {
-            grid-column-start: span 2;
-        }
-        &:nth-child(5) {
-            grid-row-start: span 2;
-        }
-        &:nth-child(5) {
-            grid-row-start: span 2;
-        }
-
-
-        @media screen and (max-width: 412px) {
-            &:nth-child(1) {
-                grid-column-start: span 3;
-            }
-            &:nth-child(2) {
-                grid-column-start: span 3;
-            }
-            &:nth-child(3) {
-                grid-column-start: span 3;
-            }
-            &:nth-child(4) {
-                grid-column-start: span 3;
-            }
-            &:nth-child(5) {
-                grid-column-start: span 3;
-            }
-            &:nth-child(6) {
-                grid-column-start: span 3;
-            }
-        }
-    }
+.navbar-dark .navbar-nav .nav-link.active, .navbar-dark .navbar-nav .show > .nav-link {
+    color: $colorfuenteprincipal;
 }
 
-/* FIN INDEX */
-
-/* MATERIALES */
-
-.materiales-content {
-    background: linear-gradient(rgb(8, 6, 6),rgba(8, 109, 75, 0.781));
-    @media screen and (max-width: 412px) {
-   
-        .tabla {
-            width: 100%;
-        }
-    
-        .tabla thead {
-            display: none;
-        }
-    
-        .tabla th[data-titulo]{
-            display: flex;
-        }
-    
-        .tabla th[data-titulo]::before{
-            content: attr( data-titulo );
-            width: 120px;
-        }
-    
-        .tabla tr {
-            display: flex;
-            flex-direction: column;
-            border: 1px solid rgb(26, 207, 192);
-            padding: 10px;
-        }
-    }
+body {
+    background-color: $background;
 }
 
-/* FIN MATERIALES */
-
-/* CONTACTO */
-
-.contacto-container {
-    background: linear-gradient(rgb(8, 6, 6),rgba(95, 112, 114, 0.911));
-    @media screen and (max-width: 412px) {
-        .mapa-img {
-            width: 100%;
-        }
-    }
-    .icono:hover {
-        transform: scale(1.3);
-        transition: 1s;
-        scroll-behavior: smooth;
-    }
-}
-
-/* FIN CONTACTO */
-
-/* DISEÑOS EN 3D */
-
-.disenos3d {
-    color: black;
-    margin: 20px;
-    padding: 20px;
-    display: grid; 
-    grid-template-columns: 0.5fr 1fr; 
-    grid-template-rows: 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr; 
-    gap: 20px 50px; 
-    grid-template-areas: 
-        "intro intro"
-        "primeretapa pasos-primer-etapa"
-        "parrafo1 pasos-primer-etapa"
-        "segundaetapa pasos-segunda-etapa"
-        "parrafo2 pasos-segunda-etapa"; 
-        .intro { grid-area: intro; }
-        .primeretapa { grid-area: primeretapa; }
-        .parrafo1 { grid-area: parrafo1; }
-        .pasos-primer-etapa { grid-area: pasos-primer-etapa; }
-        .segundaetapa { grid-area: segundaetapa; }
-        .parrafo2 { grid-area: parrafo2; }
-        .pasos-segunda-etapa { grid-area: pasos-segunda-etapa; }
-        ol li {
-            justify-content: center;
-        }
-}
-
-/* FIN DISEÑOS EN 3D */
-
-/* IMPRESIONES EN 3D */
-
-.vid-conteiner {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-auto-rows: 300px;
-    padding: 20px;
-    grid-gap: 10px;
-    background: linear-gradient(rgb(8, 6, 6),rgba(8, 109, 75, 0.781));
-    .vid__item {
-        position: relative;
-        }
-    
-    .vid__mp4 {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        }
-    @media screen and (max-width: 412px) 
-        {
-            display: flex;
-            flex-direction: column;
-        }
-        
-}
-
-/* FIN DE IMPRESIONES 3D */
+img, svg {
+    background-color: transparentize($color: #02ad96, $amount: 0);
+  }

@@ -1,0 +1,29 @@
+/* DISEÑOS EN 3D */
+
+.disenos3d {
+    color: black;
+    margin: 20px;
+    padding: 20px;
+    display: grid; 
+    grid-template-columns: 0.5fr 1fr; 
+    grid-template-rows: 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr; 
+    gap: 20px 50px; 
+    grid-template-areas: 
+        "intro intro"
+        "primeretapa pasos-primer-etapa"
+        "parrafo1 pasos-primer-etapa"
+        "segundaetapa pasos-segunda-etapa"
+        "parrafo2 pasos-segunda-etapa"; 
+        .intro { grid-area: intro; }
+        .primeretapa { grid-area: primeretapa; }
+        .parrafo1 { grid-area: parrafo1; }
+        .pasos-primer-etapa { grid-area: pasos-primer-etapa; }
+        .segundaetapa { grid-area: segundaetapa; }
+        .parrafo2 { grid-area: parrafo2; }
+        .pasos-segunda-etapa { grid-area: pasos-segunda-etapa; }
+        ol li {
+            justify-content: center;
+        }
+}
+
+/* FIN DISEÑOS EN 3D */
