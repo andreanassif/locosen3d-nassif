@@ -1,0 +1,33 @@
+/* MATERIALES */
+
+.materiales-content {
+    background: linear-gradient(rgb(8, 6, 6),rgba(8, 109, 75, 0.781));
+    @media screen and (max-width: 428px) {
+   
+        .tabla {
+            width: 100%;
+        }
+    
+        .tabla thead {
+            display: none;
+        }
+    
+        .tabla th[data-titulo]{
+            display: flex;
+        }
+    
+        .tabla th[data-titulo]::before{
+            content: attr( data-titulo );
+            width: 120px;
+        }
+    
+        .tabla tr {
+            display: flex;
+            flex-direction: column;
+            border: 1px solid rgb(26, 207, 192);
+            padding: $padding
+        }
+    }
+}
+
+/* FIN MATERIALES */

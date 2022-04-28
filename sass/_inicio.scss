@@ -1,0 +1,67 @@
+/* INDEX */
+
+.gallery-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 300px;
+    padding: 20px;
+    grid-gap: 10px;
+    background: linear-gradient(rgb(8, 6, 6),rgba(8, 109, 75, 0.781));
+    .gallery__item {
+        position: relative;
+        .gallery__img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            &:hover{
+                transform: scale(1.1);
+                box-shadow: 0 0 25px rgb(102, 102, 102);
+                transition: 1s;
+                scroll-behavior: $scrollbehavior;
+            }
+        }
+        
+        .gallery__title{
+            position: absolute;
+            bottom: 0;
+            color: aquamarine;
+            background: linear-gradient(rgba(255,255,255,0),rgba(0,0,0,1));
+            width: 100%;
+            margin: 0;
+            padding: $padding;
+        }
+        &:nth-child(1) {
+            grid-column-start: span 2;
+        }
+        &:nth-child(5) {
+            grid-row-start: span 2;
+        }
+        &:nth-child(5) {
+            grid-row-start: span 2;
+        }
+
+
+        @media screen and (max-width: 428px) {
+            &:nth-child(1) {
+                grid-column-start: span 3;
+            }
+            &:nth-child(2) {
+                grid-column-start: span 3;
+            }
+            &:nth-child(3) {
+                grid-column-start: span 3;
+            }
+            &:nth-child(4) {
+                grid-column-start: span 3;
+            }
+            &:nth-child(5) {
+                grid-column-start: span 3;
+            }
+            &:nth-child(6) {
+                grid-column-start: span 3;
+            }
+        }
+    }
+}
+
+/* FIN INDEX */
