@@ -14,6 +14,8 @@ fieldset {
 
 .contacto-container {
     background: linear-gradient(rgb(8, 6, 6),rgba(95, 112, 114, 0.911));
+    margin: 15px;
+    text-align: center;
     @media screen and (max-width: 428px) {
         .mapa-img {
             width: 100%;
