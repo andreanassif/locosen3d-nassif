@@ -6,7 +6,6 @@
 @import "disenos3d";
 @import "impresiones3d";
 
-
 .navbar-dark .navbar-brand {
     color: $colorfuenteprincipal;
   }
@@ -26,3 +25,21 @@ body {
 img, svg {
     background-color: transparentize($color: #02ad96, $amount: 0);
   }
+
+.carousel {
+    position: relative;
+    width: 50%;
+    margin: auto;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.btn-primary {
+    color: $colorfuenteprincipal;
+    background-color: $background;
+    border-color: $colorfuenteprincipal;
+}
