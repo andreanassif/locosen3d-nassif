@@ -2,7 +2,8 @@
 
 .materiales-content {
     background: linear-gradient(rgb(8, 6, 6),rgba(2, 36, 25, 0.781));
-    margin: 15px;
+    margin: 25px;
+    text-align: center;
     @media screen and (max-width: 428px) {
    
         .tabla {
@@ -30,5 +31,20 @@
         }
     }
 }
+
+.tabla thead tr th {
+    border: solid;
+    border-radius: 1px;
+    margin: 1px;
+    padding: 5px;
+}
+
+.tabla tbody tr th {
+    border: solid;
+    border-radius: 1px;
+    margin: 1px;
+    padding: 5px;
+}
+
 
 /* FIN MATERIALES */

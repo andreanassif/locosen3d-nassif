@@ -11,10 +11,10 @@
     text-align: center; 
     grid-template-areas: 
         "intro intro"
+        "primeretapa parrafo1"
         "primeretapa pasos-primer-etapa"
-        "parrafo1 pasos-primer-etapa"
-        "segundaetapa pasos-segunda-etapa"
-        "parrafo2 pasos-segunda-etapa"; 
+        "segundaetapa parrafo2"
+        "segundaetapa pasos-segunda-etapa"; 
         .intro { grid-area: intro; }
         .primeretapa { grid-area: primeretapa; }
         .parrafo1 { grid-area: parrafo1; }
@@ -24,6 +24,7 @@
         .pasos-segunda-etapa { grid-area: pasos-segunda-etapa; }
         ol li {
             justify-content: center;
+            padding: initial;
         }
 }
 
