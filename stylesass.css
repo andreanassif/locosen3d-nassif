@@ -22,6 +22,17 @@
   margin-bottom: 15px;
   padding: 10px; }
 
+p {
+  margin-top: 15px;
+  margin-bottom: 2rem;
+  padding: initial;
+  color: #07f1bf98; }
+
+ul {
+  margin-top: 5px;
+  margin-bottom: 2rem;
+  padding: initial; }
+
 /* INDEX */
 .gallery-container {
   display: grid;
@@ -31,13 +42,16 @@
   grid-gap: 10px;
   background: linear-gradient(#080606, rgba(8, 109, 75, 0.781)); }
   .gallery-container .gallery__item {
-    position: relative; }
+    position: relative;
+    overflow: hidden; }
     .gallery-container .gallery__item .gallery__img {
       width: 100%;
       height: 100%;
-      object-fit: cover; }
+      object-fit: cover;
+      transform: scale(1);
+      transition: all 2s ease-in; }
       .gallery-container .gallery__item .gallery__img:hover {
-        transform: scale(1.1);
+        transform: scale(1.15);
         box-shadow: 0 0 25px #666666;
         transition: 1s;
         scroll-behavior: smooth; }
@@ -71,11 +85,23 @@
       .gallery-container .gallery__item:nth-child(7) {
         grid-column-start: span 3; } }
 
+.aumentar {
+  transition: transform 0.5s ease-in;
+  transition-property: transform;
+  transition-duration: 0.5s;
+  transition-timing-function: ease-in;
+  transition-delay: 0s; }
+
+.navbar-dark .navbar-toggler {
+  margin: 5px;
+  padding: 5px; }
+
 /* FIN INDEX */
 /* MATERIALES */
 .materiales-content {
   background: linear-gradient(#080606, rgba(2, 36, 25, 0.781));
-  margin: 15px; }
+  margin: 25px;
+  text-align: center; }
   @media screen and (max-width: 428px) {
     .materiales-content .tabla {
       width: 100%; }
@@ -92,6 +118,18 @@
       border: 1px solid #1acfc0;
       padding: 0px; } }
 
+.tabla thead tr th {
+  border: solid;
+  border-radius: 1px;
+  margin: 1px;
+  padding: 5px; }
+
+.tabla tbody tr th {
+  border: solid;
+  border-radius: 1px;
+  margin: 1px;
+  padding: 5px; }
+
 /* FIN MATERIALES */
 /* CONTACTO */
 .contacto {
@@ -99,6 +137,9 @@
   flex-direction: column; }
 
 fieldset {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   min-width: 10px;
   padding: 10px;
   margin: 10px;
@@ -127,7 +168,7 @@ fieldset {
   grid-template-rows: 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr;
   gap: 20px 50px;
   text-align: center;
-  grid-template-areas: "intro intro" "primeretapa pasos-primer-etapa" "parrafo1 pasos-primer-etapa" "segundaetapa pasos-segunda-etapa" "parrafo2 pasos-segunda-etapa"; }
+  grid-template-areas: "intro intro" "primeretapa parrafo1" "primeretapa pasos-primer-etapa" "segundaetapa parrafo2" "segundaetapa pasos-segunda-etapa"; }
   .disenos3d .intro {
     grid-area: intro; }
   .disenos3d .primeretapa {
@@ -143,7 +184,8 @@ fieldset {
   .disenos3d .pasos-segunda-etapa {
     grid-area: pasos-segunda-etapa; }
   .disenos3d ol li {
-    justify-content: center; }
+    justify-content: center;
+    padding: initial; }
 
 /* FIN DISEÑOS EN 3D */
 /* IMPRESIONES EN 3D */
@@ -166,6 +208,22 @@ fieldset {
       flex-direction: column; } }
 
 /* FIN DE IMPRESIONES 3D */
+.acceso {
+  display: flex;
+  flex-direction: column; }
+
+#registrarse {
+  display: flex;
+  flex-direction: column;
+  margin: 25px;
+  padding: 25px; }
+
+#iniciar-sesion {
+  display: flex;
+  flex-direction: column;
+  margin: 25px;
+  padding: 25px; }
+
 .navbar-dark .navbar-brand {
   color: #00eebada; }
 
