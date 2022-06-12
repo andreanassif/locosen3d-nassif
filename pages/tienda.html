@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="../stylesass.css">
     <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <script defer src="../JavaScript/tienda.js"></script>
 </head>
 <body class="tienda">
    <header>
@@ -51,82 +52,88 @@
       </nav>
    </header> 
    <main>
-        <div class="main">
+        <div class="main bg-dark">
             <h1>Bienvenidos a la tienda!</h1>
             <div class="continer">
-              <div class="row">
+              <div class="row" id="listadoProductos">
 
-                <div class="card col-sm-6-md-4-col-lg-3 bg-dark">
+                <div class="card col-sm-6-md-4 col-lg-3 bg-dark" id="productos">
                   <img src="../assets/velador-blanco-modelo7.jpeg" class="card-img-top" alt="">
                   <div class="card-body">
                     <h5 class="card-title">Velador Espiraldo Modelo 7</h5>
                     <p class="card-text">Velador Espiralado. Varios colores disponibles.</p>
-                    <a href="#" class="btn btn-primary">$1.900,00.-</a>
-                    <script src="https://www.mercadopago.com.ar/integrations/v1/web-payment-checkout.js" data-preference-id="499196389-c40107cd-f190-4b6b-b6a7-a8eeada53353" data-source="button"></script>
+                    <a href="#" class="btn btn-primary" id="precio">$1.900,00.-</a>
+                    <a href="#" class="btn btn-primary addCarrito">Agregar al carrito</a>
                   </div>
                 </div>
 
-                <div class="card col-sm-6-md-4-col-lg-3 bg-dark">
+                <div class="ccard col-sm-6-md-4 col-lg-3 bg-dark" id="productos">
                   <img src="../assets/velador-fucsia-modelo3.jpeg" class="card-img-top" alt="">
                   <div class="card-body">
                     <h5 class="card-title">Velador Espiraldo Modelo 3</h5>
                     <p class="card-text">Velador Espiralado. Varios colores disponibles.</p>
-                    <a href="#" class="btn btn-primary">$1.900,00.-</a>
-                    <script src="https://www.mercadopago.com.ar/integrations/v1/web-payment-checkout.js" data-preference-id="499196389-c40107cd-f190-4b6b-b6a7-a8eeada53353" data-source="button"></script>
+                    <a href="#" class="btn btn-primary" id="precio">$1.900,00.-</a>
+                    <a href="#" class="btn btn-primary addCarrito">Agregar al carrito</a>
                   </div>
                 </div>
 
-                <div class="card col-sm-6-md-4-col-lg-3 bg-dark">
+                <div class="card col-sm-6-md-4 col-lg-3 bg-dark" id="productos">
                   <img src="../assets/velador-naranja-modelo33.jpeg" class="card-img-top" alt="">
                   <div class="card-body">
                     <h5 class="card-title">Velador Espiraldo Modelo 33</h5>
                     <p class="card-text">Velador Espiralado. Varios colores disponibles.</p>
-                    <a href="#" class="btn btn-primary">$1.900,00.-</a>
-                    <script src="https://www.mercadopago.com.ar/integrations/v1/web-payment-checkout.js" data-preference-id="499196389-c40107cd-f190-4b6b-b6a7-a8eeada53353" data-source="button"></script>
+                    <a href="#" class="btn btn-primary" id="precio">$1.900,00.-</a>
+                    <a href="#" class="btn btn-primary addCarrito">Agregar al carrito</a>
                   </div>
                 </div>
 
-                <div class="card col-sm-6-md-4-col-lg-3 bg-dark">
+                <div class="card col-sm-6-md-4 col-lg-3 bg-dark" id="productos">
                   <img src="../assets/velador-on-azul-modelo5.jpeg" class="card-img-top" alt="">
                   <div class="card-body">
                     <h5 class="card-title">Velador Espiraldo Modelo 5</h5>
                     <p class="card-text">Velador Espiralado. Varios colores disponibles.</p>
-                    <a href="#" class="btn btn-primary">$1.900,00.-</a>
-                    <script src="https://www.mercadopago.com.ar/integrations/v1/web-payment-checkout.js" data-preference-id="499196389-c40107cd-f190-4b6b-b6a7-a8eeada53353" data-source="button"></script>
+                    <a href="#" class="btn btn-primary" id="precio">$1.900,00.-</a>
+                    <a href="#" class="btn btn-primary addCarrito">Agregar al carrito</a>
                   </div>
                 </div>
 
-                <div class="card col-sm-6-md-4-col-lg-3 bg-dark">
+                <div class="card col-sm-6-md-4 col-lg-3 bg-dark" id="productos">
                   <img src="../assets/tetrix-balancin.jpeg" class="card-img-top" alt="">
                   <div class="card-body">
                     <h5 class="card-title">Juego didáctico</h5>
                     <p class="card-text">Ideal para ejercitar la parte motriz de los chicos. Juego de equilibrio. La base a medida es redonda y hace que al poner las piezas empiece a balancearse, hay que lograr poner todas las piezas sin que se caiga. Al que se le cae pierde!</p>
-                    <a href="#" class="btn btn-primary">$1.000,00.-</a>
-                    <script src="https://www.mercadopago.com.ar/integrations/v1/web-payment-checkout.js" data-preference-id="499196389-4e4e0904-4ac4-4cd2-85a1-37b2bb64ec9c" data-source="button"></script>
+                    <a href="#" class="btn btn-primary" id="precio">$1.000,00.-</a>
+                    <a href="#" class="btn btn-primary addCarrito">Agregar al carrito</a>
                   </div>
                 </div>
 
-                <div class="card col-sm-6-md-4-col-lg-3 bg-dark">
+                <div class="card col-sm-6-md-4 col-lg-3 bg-dark" id="productos">
                   <img src="../assets/foto4.jpg" class="card-img-top" alt="">
                   <div class="card-body">
                     <h5 class="card-title">Soportes Notebook</h5>
                     <p class="card-text">Ideal para largas jornadas de trabajo frente a nuestra computadora, permite mejorar la postura y así evitar dolores cervicales y de espalda. Brinda la posibilidad de ajustar el ángulo de inclinación y mejorar la refrigeración del equipo. Además de ser encastrable lo que lo vuelve muy compacto y fácil de transportar. El soporte es plegable y se puede configurar en cuatro posiciones, 15 ° (7cm), 25 ° (10cm), 35 ° (12,5cm ) y 45 ° (15cm). Acepta notebooks de hasta 2cm de grosor (medir solo grosor de teclado). Disponibles en varios colores.</p>
-                    <a href="#" class="btn btn-primary">$1.200,00.-</a>
-                    <script src="https://www.mercadopago.com.ar/integrations/v1/web-payment-checkout.js" data-preference-id="499196389-68365f5b-6f7f-477f-8e9f-0b61a5adc400" data-source="button"></script>
+                    <a href="#" class="btn btn-primary" id="precio">$1.200,00.-</a>
+                    <a href="#" class="btn btn-primary addCarrito">Agregar al carrito</a>
                   </div>
                 </div>
 
-                <div class="card col-sm-6-md-4-col-lg-3 bg-dark">
+                <div class="card col-sm-6-md-4 col-lg-3 bg-dark" id="productos">
                   <img src="../assets/llaveros-soporte-celulares.jpeg" class="card-img-top" alt="">
                   <div class="card-body">
                     <h5 class="card-title">Llavero soporte celular</h5>
                     <p class="card-text">Varios diseños y colores.</p>
-                    <a href="#" class="btn btn-primary">$250,00.-</a>
-                    <script src="https://www.mercadopago.com.ar/integrations/v1/web-payment-checkout.js" data-preference-id="499196389-b264122b-3d19-4943-acae-6f7524d859d4" data-source="button"></script>
+                    <a href="#" class="btn btn-primary" id="precio">$250,00.-</a>
+                    <a href="#" class="btn btn-primary addCarrito">Agregar al carrito</a>
                   </div>
                 </div>
 
               </div>
+            </div>
+            <h1>Carrito</h1>
+            <div class="carrito"> 
+              <ul class="" id="listadoCarrito"></ul>
+              <a class="btn-floating btn-large blue white-text z-depth-3 waves-effect waves-light" href="compras.html" text="Finalizar Compra">
+              <img src="../assets/tienda.png" alt="" width="50px" height="50px">Finalizar Compra</a>
             </div>
         </div>
     </main>
