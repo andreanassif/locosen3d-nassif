@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="../stylesass.css">
     <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-    <script defer src="../JavaScript/contacto.js"></script>
+    
 </head>
 <body class="contacto-container">
    <header>
@@ -51,49 +51,52 @@
         </div>
       </nav>
    </header> 
-   <main class="contacto">
-    <h1>Formulario de Contacto</h1>
-    <form action="" method="get">
-    <fieldset>
-        <legend>
-            <h2>Dejanos tus datos aquí!</h2>
-        </legend>
-        <input type="text" name="username" id="nombre" placeholder="Ingrese su nombre completo">
-        <input type="email" name="email" placeholder="Ingresar email" required>
-        <input type="tel" name="phone" placeholder="Teléfono" required>
-        <select name="countries">
-            <option value="" hidden selected>Elige tu país</option>
-            <option value="ar">Argentina</option>
-            <option value="br">Brasil</option>
-            <option value="ch">Chile</option>
-            <option value="py">Paraguay</option>
-            <option value="bo">Bolivia</option>
-        </select>
-        <h3>Tipo de consulta</h3>
-        <label for="">Proyecto</label>
-        <input type="checkbox" name="Tipo de consulta" id="code" value="code">
-        <label for="">Producto</label>
-        <input type="checkbox" name="Tipo de consulta" id="code" value="code">
-        <label for="">Regalos empresariales</label>
-        <input type="checkbox" name="Tipo de consulta" id="code" value="code">
-        <textarea name="Message" placeholder="Deja tu consulta aquí" cols="30" rows="10"></textarea>
-        <button type="reset">Limpiar</button>
-        <button type="submit">Enviar</button>
-    </fieldset>
-    
-    </form>
-
-    <fieldset>
-        <legend>
-            <h2>Nuestros Datos</h2>
-        </legend>
-        <span>Teléfono:</span><a href="Tel:+541160293182">+54 11 60293182</a> <br>
-        <span><a href="mailito:andrea.e.nassif@gmail.com"><img src="../assets/email.png" alt="email" width="30px" height="30px" class="icono">andrea.e.nassif@gmail.com </a></span> <br>
-        <span><a href="https://www.instagram.com/locosen3d/?hl=es-la"><img src="../assets/instagram.png" alt="" width="30px" height="30px" class="icono"> @locosen3d </a></span> <br>  
-        <span><a href="https://api.whatsapp.com/send?phone=0123456789"><img src="../assets/whatsapp.png" alt="+541160293182" width="30px" height="30px" class="icono">Envianos un whatsapp!</a></span> <br>
-        <span> <img src="../assets/mapa.png" alt="" width="30px" height="30px" class="icono">Coronel Brandsen 4489, Pcia. de Buenos Aires, La Tablada, CP1766</span><br>
-        <iframe class="mapa-img" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3280.9602423702895!2d-58.540057984768346!3d-34.6809528804396!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc8967261dcd1%3A0x701ceaccc925fc32!2sCnel.%20Brandsen%204489%2C%20B1766FDC%20La%20Tablada%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1647310583421!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-    </fieldset>
+   <main>
+    <div class="contacto n-0 vh-100 row justify-content-center align-items-center">
+      <div class="col-auto">
+        <h1>Formulario de Contacto</h1>
+        <form action="" method="get" id="formulario">
+          <fieldset>
+            <legend>
+              <h2>Dejanos tus datos aquí!</h2>
+            </legend>
+              <input type="text" name="username" id="nombre" placeholder="Ingrese su nombre completo">
+              <input type="email" name="email" id="email" placeholder="Ingresar email" required>
+              <input type="tel" name="phone" id="phone" placeholder="Teléfono" required>
+              <select name="countries" id="country">
+                <option value="" hidden selected>Elige tu país</option>
+                <option value="ar">Argentina</option>
+                <option value="br">Brasil</option>
+                <option value="ch">Chile</option>
+                <option value="py">Paraguay</option>
+                <option value="bo">Bolivia</option>
+              </select>
+            <h3>Tipo de consulta</h3>
+              <label for="">Proyecto</label>
+              <input type="checkbox" name="Tipo de consulta" id="code" value="code">
+              <label for="">Producto</label>
+              <input type="checkbox" name="Tipo de consulta" id="code" value="code">
+              <label for="">Regalos empresariales</label>
+              <input type="checkbox" name="Tipo de consulta" id="code" value="code">
+            <textarea name="Message" id="consulta" placeholder="Deja tu consulta aquí" cols="30" rows="10"></textarea>
+            <button type="reset">Limpiar</button>
+            <button type="submit">Enviar</button>
+          </fieldset>
+        </form>
+      </div>
+    </div>
+    <div class="col-auto">
+      <fieldset>
+          <legend>
+              <h2>Nuestros Datos</h2>
+          </legend>
+          <span><a href="mailito:Locosen3d@gmail.com"><img src="../assets/email.png" alt="email" width="30px" height="30px" class="icono">Locosen3d@gmail.com </a></span> <br>
+          <span><a href="https://www.instagram.com/locosen3d/?hl=es-la"><img src="../assets/instagram.png" alt="" width="30px" height="30px" class="icono"> @locosen3d </a></span> <br>  
+          <span><a href="https://api.whatsapp.com/send?phone=+541162661368"><img src="../assets/whatsapp.png" alt="+541162661368" width="30px" height="30px" class="icono">Envianos un whatsapp al +54 11 62661368!</a></span> <br>
+          <span> <img src="../assets/mapa.png" alt="" width="30px" height="30px" class="icono">Coronel Brandsen 4489, Pcia. de Buenos Aires, La Tablada, CP1766</span><br>
+          <iframe class="mapa-img col-auto" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3280.9602423702895!2d-58.540057984768346!3d-34.6809528804396!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc8967261dcd1%3A0x701ceaccc925fc32!2sCnel.%20Brandsen%204489%2C%20B1766FDC%20La%20Tablada%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1647310583421!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+      </fieldset>
+    </div>
 
     </main>
     <footer>
@@ -121,6 +124,9 @@
           ©2022 LOCOS EN 3D - Hecho con ♥ hacia la impresión 3D
       </div>
     </footer>
-   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="../JavaScript/contacto.js"></script>
 </body>
 </html>

@@ -31,4 +31,25 @@ fieldset {
     }
 }
 
+
+.swal-title {
+    color: $colorfuenteprincipal;
+    background-color: rgba(137, 158, 255, 0);
+  }
+
+.swal-text {
+    color: $colorfuenteprincipal;
+    background-color: rgba(105, 128, 228, 0);
+}
+
+.swal-modal {
+    background-color: rgba(105, 127, 228, 0.308);
+}
+
+.swal-footer {
+    background-color: rgba(105, 127, 228, 0.308);
+}
+
+
+
 /* FIN CONTACTO */

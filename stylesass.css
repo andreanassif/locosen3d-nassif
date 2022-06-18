@@ -157,6 +157,20 @@ fieldset {
     transition: 1s;
     scroll-behavior: smooth; }
 
+.swal-title {
+  color: #00eebada;
+  background-color: rgba(137, 158, 255, 0); }
+
+.swal-text {
+  color: #00eebada;
+  background-color: rgba(105, 128, 228, 0); }
+
+.swal-modal {
+  background-color: rgba(105, 127, 228, 0.308); }
+
+.swal-footer {
+  background-color: rgba(105, 127, 228, 0.308); }
+
 /* FIN CONTACTO */
 /* DISEÑOS EN 3D */
 .disenos3d {
@@ -215,14 +229,14 @@ fieldset {
 #registrarse {
   display: flex;
   flex-direction: column;
-  margin: 25px;
-  padding: 25px; }
+  margin: 10px;
+  padding: 10px; }
 
 #iniciar-sesion {
   display: flex;
   flex-direction: column;
-  margin: 25px;
-  padding: 25px; }
+  margin: 10px;
+  padding: 10px; }
 
 .navbar-dark .navbar-brand {
   color: #00eebada; }
